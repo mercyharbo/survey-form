@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title"><span>MovieArena</span> Survey Form</h1>
+            <p id="description"><em>Thank you for taking the time to help us improve the platform.</em></p>
+        </header>
+
+        <div class="form-container">
+            <form id="survey-form" action="">
+                <fieldset>
+            <div class="details-div">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="username" required>
+
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" name="email" placeholder="email" required>
+
+                <label for="age" id="age-label">Age <span>(optional)</span></label>
+                <input id="age" type="number" name="number" placeholder="age" min="12" max="100" required>
+            </div>
+                
+
+            <div class="dropdown-div">
+                <label for="dropdown" id="select">What movie types are you interested in?</label><br>
+                <select name="dropdown" id="dropdown">
+                    <option value="Film">Film</option>
+                    <option value="TV Shows">TV Shows</option>
+                    <option value="Mini-series">Mini-series</option>
+                    <option value="Documentaries">Documentaries</option>
+                    <option value="Others">Others</option>
+                </select>
+
+            </div>
+               
+                
+            <div class="radio-div">
+                <p>Would you recommend MovieArena to a friend?</p>
+                <input id="radio" type="radio" name="response" value="Definitely">
+                <label for="radio" id="radio-label">Definitely</label><br>
+                <input id="radio" type="radio" name="response" value="Maybe">
+                <label for="radio" id="radio-label">Maybe</label><br>
+                <input id="radio" type="radio" name="response" value="Not sure">
+                <label for="radio" id="radio-label">Not Sure</label>
+                
+            </div>
+                
+            <div class="checkbox-div">
+                <p>Which are your favourite movie genres? <span>(click all that apply)</span></p>
+
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Drama</label><br>
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Comedy</label><br>
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Romance</label><br>
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Action</label><br>
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Thriller</label><br>
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Horror</label><br>
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Crime</label><br>
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Fantasy</label><br>
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Animation</label><br>
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Adventure</label><br>
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Musical</label><br>
+                <input id="checkbox" type="checkbox" name="genre" >
+                <label for="checkbox" id="genre">Sci-Fi</label>
+                <input id="checkbox" type="checkbox" name="genre" >
+            </div>
+                
+            <div class="textarea-div">
+                <label for="message" id="textarea-label">Any comments or suggestions?</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter suggestions"></textarea>
+            </div>
+                
+
+                <button type="submit">Submit</button>
+            </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
